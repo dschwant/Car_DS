@@ -1,0 +1,45 @@
+--------------------------
+ Using Data Science Tools 
+     To Investigate 
+Automotive Diagnostic Data
+--------------------------
+Drivers:
+A. I am curious about what my car's diagnostic data can be used for.
+B. Very accessible tools can provide a wealth of automobile parametric data.
+C. I need to use a real problem/challenge to learn more data management and analysis principles.
+D. I would like to understand what really impacts my car's fuel efficiency.
+
+Goals:
+1. I have setup an end-to-end analytics solution using my car's parametric data.
+2. I can communicate the cost/benefit of an end-to-end automobile analysis solution.
+3. I can show what factors affect my vehicles fuel efficiency.
+
+Deliverables
+I. Initial Plan
+II. Data requirements definition.
+III. Data capture tools solution.
+IV. Data storage, processing and reporting solution.
+V. Iterative delivery cycles.
+VI. Presentation of findings.
+VII. Next steps plan.
+
+Values, Assumptions, Constraints:
+- "Fuel efficiency" will be measured in simple a form of distance over consumption (MPG).
+- I don't want to spend much money. I already had the OBD-II module, a cell phone, a tablet and monthly Azure credits.
+- I want to balance reusing what I can already find (what is on the web about this) with the value of creating something myself.
+- I don't have a lot of free time, and I hate driving, so using my commute for data capture makes this work.
+- If I can package this up and present it (written and some forums), then I can justify the time spent at work.
+- I don't want to expose my GPS positioning data.
+- Most systems measure in metric units, but for common US presentation I may need to analyze or present using Imperial units.
+- I will use a 2012 Nissan Sentra (2.0L 4 cyl. 2-speed CVT).
+
+Plan (Deliverable - Month):
+- Create charter (201805)
+- Define initial OIP target (201805)
+- Investigate data capture methods (201805)
+- Define initial data to capture  (201806)
+- Test/validate initial data capture (201806)
+- Create initial data storage and analysis solution (201807)
+- Iterated end-to-end solution (201809) 
+- Presentation of finding and next steps plan (201810) 
+

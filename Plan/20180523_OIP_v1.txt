@@ -1,0 +1,66 @@
+-----------------
+20180523 - OIP v1
+-----------------
+Definitions:
+"Fuel efficiency" - will be measured in simple a form of distance over consumption (MPG).
+
+Causal Hypotheses:
+> Given a fixed propulsion system (my 2012 Nissan Sentra):
+	+ Speed
+	+ RPM
+	* Frequency and rates of acceleration (and idling)
+	? Frequency and rates of braking
+	* Length of trip
+	+ Fuel level
+	!! Fuel type
+	!!? Age of engine oil
+	? Tire Pressure
+	!! Tire condition
+	!! Number of passengers
+	# Altitude
+	*? Pitch (angle of ascent or descent)
+	*? Yaw (angle or direction of turning)
+	+ Ambient temperature
+	+ Air intake temperature
+	+ Engine temperature
+	? AC system usage
+	!!? Window positions
+
+> Notes on flags - this is an initial guess at how to get this data:
+	+ Known available car sensor
+	# Known available other source
+	* Needs to be calculated from other values
+	? Not sure how to do this
+	!! Will need to be manually tracked
+
+Output:
+	- Simple correlation graphs of factors vs. fuel efficiency.
+	- Probablistics correlation of factors to fuel efficiency.
+	- My conclusion of what really affects fuel efficiency.
+
+Input:
+> All data must be temporal/time series data.
+> Here is what we will attempt to capture (see flags above):
+	+ Fuel consumption rate ()
+	+ Speed ()
+	+ RPM ()
+	* Frequency and rates of acceleration (and idling)
+	? Frequency and rates of braking
+	* Length of trip
+	+ Fuel level
+	!! Fuel type
+	!!? Age of engine oil
+	? Tire Pressure
+	!! Tire condition
+	!! Number of passengers
+	# Altitude
+	*? Pitch (angle of ascent or descent)
+	*? Yaw (angle or direction of turning)
+	+ Ambient temperature
+	+ Air intake temperature
+	+ Engine temperature
+	? AC system usage
+	!!? Window positions
+
+
+
