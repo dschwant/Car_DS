@@ -6,6 +6,7 @@ Definitions:
 
 Causal Hypotheses:
 > Given a fixed propulsion system (my 2012 Nissan Sentra):
+!!! Need to go finslize this list
 	+ Speed
 	+ RPM
 	* Frequency and rates of acceleration (and idling)
@@ -40,7 +41,8 @@ Output:
 
 Input:
 > All data must be temporal/time series data.
-> Here is what we will attempt to capture (see flags above):
+> Here is what we will attempt to capture - see flags above (name of ODB reading):
+!!! Need to go through these and decoide which ones we want to try first
 	+ Fuel consumption rate ()
 	+ Speed ()
 	+ RPM ()
@@ -62,5 +64,11 @@ Input:
 	? AC system usage
 	!!? Window positions
 
+Processing:
+> Data collection process
 
+> Data raw storage process
 
+> Data merge and convert process
+
+> Analysis process
