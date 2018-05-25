@@ -8,6 +8,7 @@ A. I am curious about what my car's diagnostic data can be used for.
 B. Very accessible tools can provide a wealth of automobile parametric data.
 C. I need to use a real problem/challenge to learn more data management and analysis principles.
 D. I would like to understand what really impacts my car's fuel efficiency.
+E. Executing this challenge provides a way of demonstrating a process orientation.
 
 Goals:
 1. I have setup an end-to-end analytics solution using my car's parametric data.
@@ -31,7 +32,7 @@ Values, Assumptions, Constraints:
 - If I can package this up and present it (written and some forums), then I can justify the time spent at work.
 - I don't want to expose my GPS positioning data.
 - Most systems measure in metric units, but for common US presentation I may need to analyze or present using Imperial units.
-- I will use a 2012 Nissan Sentra (2.0L 4 cyl. 2-speed CVT).
+- I will use a 2012 Nissan Sentra.
 
 Plan (Deliverable - Month):
 - Create charter (201805)
@@ -45,8 +46,14 @@ Plan (Deliverable - Month):
 
 Resources:
 > Equipment
+- 2012 Nissan Sentra (2.0L 4 cyl. 2-speed CVT, 14.5 gal. tank, 50K Miles) - $8k
+- OBD II ELM327 WiFi tool. - $15
+- iPhone 5se - $100
+- Samsung Galaxy Tab ?? - $?
 
 > Tools 
+- Sensor Data iPhone app (Wavefront Labs) - $0
+- Torque Pro OBD 2 andriod app - $7
 
 > People
 
