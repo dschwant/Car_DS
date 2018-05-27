@@ -1,0 +1,19 @@
+I am using a 2012 Nissan Sentra for a data science project related to fuel consumption efficiency. I have a list of about 20 factors I am trying to correlate to fuel efficiency. 
+
+Many are easy (Speed, RPM, Fuel level, temperatures, altitude, etc...), some I can derive from the data I capture (frequency and rates of acceleration and idling, length of each discreet "trips", pitch [angle of ascent or descent], and yaw [turn direction and rates of turns]).
+
+A few I have given up on capturing (like whether any window is down - I doubt there is a sensor and I don't want to manually capture it, or the condition of the tires - they are new and will not wear much in the short time if the data capture). 
+
+Some I plan to try to capture manually (I don't know if Torque makes this easy, so I plan to just have a spreadsheet where I capture these):
+
+- Fuel type on refill
+- Oil Change and type
+- Number of passengers
+
+So, to the question - These are the remaining things I want to capture, but have not found a clean way to do them:
+
+- Frequency and rates of braking - I can't find any brake sensors and speed/accelerator/descent methods are not ideal?
+- Tire Pressure - is it possible to capture info from the TPMS?
+- AC system usage - when is it on or off?
+
+Any help on if there are PIDS I can't see (or have overlooked) that would help?
