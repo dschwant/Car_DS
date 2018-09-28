@@ -7,32 +7,36 @@ Definitions:
 Causal Hypotheses:
 > Given a fixed propulsion system (my 2012 Nissan Sentra):
 !!! Need to go finalize this list
-	+ Speed
+	+# Speed
 	+ RPM
-	* Frequency and rates of acceleration (and idling)
-	? Frequency and rates of braking
+	*+ Amount of time idling
+	*+ Frequency and rates of attempted acceleration 
+	*+ Frequency of braking
 	* Length of trip
 	+ Fuel level
 	!! Fuel type
-	!!? Age of engine oil
+	!! Age of engine oil
 	? Tire Pressure
-	!! Tire condition
+	? Tire condition
 	!! Number of passengers
 	# Altitude
-	*? Pitch (angle of ascent or descent)
-	*? Yaw (angle or direction of turning)
+	*# Pitch (angle of ascent or descent)
+	*# Yaw (angle or direction of turning)
 	+ Ambient temperature
 	+ Air intake temperature
 	+ Engine temperature
-	? AC system usage
-	!!? Window positions
+	* AC system usage
+	? Window positions
+	*# Level of daylight
+	*# Moon phase
+	*# Level of tide
 
 > Notes on flags - this is an initial guess at how to get this data:
-	+ Known available car sensor
-	# Known available other source
+	+ Available car sensor
+	# Available collection device source
 	* Needs to be calculated from other values
-	? Not sure how to do this
 	!! Will need to be manually tracked
+	? Not sure how to do this, maybe too difficult
 
 Output:
 	- Simple correlation graphs of factors vs. fuel efficiency.
@@ -43,26 +47,27 @@ Input:
 > All data must be temporal/time series data.
 > Here is what we will attempt to capture - see flags above (name of ODB reading):
 !!! Need to go through these and decoide which ones we want to try first
-	+ Fuel consumption rate ()
-	+ Speed ()
-	+ RPM ()
-	* Frequency and rates of acceleration (and idling)
-	? Frequency and rates of braking
-	* Length of trip
-	+ Fuel level
-	!! Fuel type
-	!!? Age of engine oil
-	? Tire Pressure
-	!! Tire condition
-	!! Number of passengers
-	# Altitude
-	*? Pitch (angle of ascent or descent)
-	*? Yaw (angle or direction of turning)
-	+ Ambient temperature
-	+ Air intake temperature
-	+ Engine temperature
-	? AC system usage
-	!!? Window positions
+	Factor	What to capture/use	Additional calculation/classification
+	Speed	OBD Speed or Device GPS Speed None
+	RPM	OBD RPM	None
+	Amount of time idling	OBD Speed or Device GPS Speed	Sum of time when speed = 0
+	Frequency and rates of attempted acceleration	OBD Speed or Device GPS Speed and Throttle status	TBD
+	Frequency of braking	OBD Brake peddle sensor	Sum or frequency of when on
+	Length of trip	OBD Odometer	Delta of miles per trip
+	Fuel level	OBD Fuel level	TBD
+	Fuel type	Log of fueling events - Octane	TBD	
+	Age of engine oil	Log of oil change	Time delta since last change
+	Number of passengers	Log of passenger count	TBD
+	Altitude	Device GPS Altitude	TBD
+	Pitch (angle of ascent or descent)	Device GPS Altitude	TBD
+	Yaw (angle or direction of turning)	Device Accelerometers(x)	Count and length of R or L turns from delta in G(x).
+	Ambient temperature	OBD Ambient Temp	TBD
+	Air intake temperature	OBD Air Intake Temp	TBD
+	Engine temperature	OBD Engine Temp	TBD
+	AC system usage	OBD AC sensor	TBD
+	Level of daylight	Device datetime	Calculate sun cycle based on assumed location
+	Moon phase	Device datetime	Calculate moon phase based on assumed location
+	Level of tide	Device datetime	Calculate level based on assumed location
 
 Processing:
 > Data collection process

@@ -1,0 +1,5 @@
+Device Time, Barometric pressure (from vehicle)(psi),Engine Coolant Temperature(°F),Engine RPM(rpm),Fuel flow rate/minute(gal/min),Fuel Level (From Engine ECU)(%),Intake Air Temperature(°F),Speed (OBD)(mph)
+23-May-2018 08:00:36.595,14.35873604,-,1025,0.00580128,100,-,-
+23-May-2018 08:00:37.594,14.35873604,-,950,0.00580128,100,-,14.91290855
+23-May-2018 08:00:38.594,14.35873604,192.19999695,950,0.00580128,100,71.59999847,14.91290855
+23-May-2018 08:00:39.594,14.35873604,192.19999695,912.5,0.00580128,100,71.59999847,11.18468189

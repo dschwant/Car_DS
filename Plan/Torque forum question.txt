@@ -17,3 +17,39 @@ So, to the question - These are the remaining things I want to capture, but have
 - AC system usage - when is it on or off?
 
 Any help on if there are PIDS I can't see (or have overlooked) that would help?
+--------------
+(Sergey - macromac@rambler.ru)
+IS) 15765-4 (11/500)
+TXADR="7E0" RXADR="7E8"
+Diagnostic start command "10C0"
+
+<name="CLOSED THROTTLE POSITION (cutoff)"
+ unit="bite"
+ comment="CLSD THL POS"
+ formule="BIT(A:0)"
+ PID="221302"/>
+
+<name="Additional load on the on-board network"
+ unit="bite"
+ comment="LOAD SIGNAL"
+ formule="BIT(A:5)"
+ PID="221302"/>
+
+<name="BRAKE SWITCH 1"
+ unit="bite"
+ comment="BRAKE SW1"
+ formule="BIT(A:4)"
+ PID="22130D"/>
+
+<name="BRAKE SWITÑH 2"
+ unit="bite"
+ comment="BRAKE SW2"
+ formule="BIT(A:5)"
+ PID="22130D"/>
+
+<name="Air conditioning"
+unit="bite"
+comment="AIR COND SIG"
+formule="Bit(A:4)"
+PID="221302"/>
+-----------------------
